@@ -1,0 +1,391 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6E45403-DB2E-43CB-8820-1A4857BF93C4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44311</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.rtl.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.rtl.min.css" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.bundle.js" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.esm.js" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.esm.min.js" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.js" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js" />
+    <Content Include="ErkutResimÇekme.aspx" />
+    <Content Include="Yonetim\admin\Admin-Siparis.aspx" />
+    <Content Include="Yonetim\admin\Siparis-Detay.aspx" />
+    <Content Include="Yonetim\admin\urun-guncelle.aspx" />
+    <Content Include="Yonetim\admin\urun-sil.aspx" />
+    <Content Include="Yonetim\admin\admin-index.aspx" />
+    <Content Include="Yonetim\admin\admin-kategori.aspx" />
+    <Content Include="Yonetim\admin\admin-marka.aspx" />
+    <Content Include="Yonetim\admin\admin-uye.aspx" />
+    <Content Include="Yonetim\admin\admin-urun.aspx" />
+    <Content Include="Yonetim\admin\kategori-ekle.aspx" />
+    <Content Include="Yonetim\admin\marka-ekle.aspx" />
+    <Content Include="Yonetim\admin\urun-ekle.aspx" />
+    <Content Include="Yonetim\include-card\marka-card.html" />
+    <Content Include="Yonetim\include-card\sepet-card.html" />
+    <Content Include="Yonetim\include-card\urun-card.html" />
+    <Content Include="Yonetim\include-card\urun-detay-card.html" />
+    <Content Include="Yonetim\index.aspx" />
+    <Content Include="Yonetim\kullanıcı-giriş.aspx" />
+    <Content Include="Yonetim\kullanıcı-giriş.css" />
+    <Content Include="Yonetim\kullanıcı-üyeol.aspx" />
+    <Content Include="Yonetim\kullanıcı-üyeol.css" />
+    <Content Include="Yonetim\Layout.css" />
+    <Content Include="Web.config" />
+    <Content Include="Yonetim\sepet.aspx" />
+    <Content Include="Yonetim\sepet.css" />
+    <Content Include="Yonetim\include-card\anasayfa-urun-card.html" />
+    <Content Include="Yonetim\urun-detay.aspx" />
+    <Content Include="Yonetim\urun-detay.css" />
+    <Content Include="Yonetim\urun.aspx" />
+    <Content Include="Yonetim\urun.css" />
+    <Content Include="Yonetim\WebForm1.aspx" />
+    <Content Include="Yonetim\İndex.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ErkutResimÇekme.aspx.cs">
+      <DependentUpon>ErkutResimÇekme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErkutResimÇekme.aspx.designer.cs">
+      <DependentUpon>ErkutResimÇekme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\Admin-Siparis.aspx.cs">
+      <DependentUpon>Admin-Siparis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\Admin-Siparis.aspx.designer.cs">
+      <DependentUpon>Admin-Siparis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\Siparis-Detay.aspx.cs">
+      <DependentUpon>Siparis-Detay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\Siparis-Detay.aspx.designer.cs">
+      <DependentUpon>Siparis-Detay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-guncelle.aspx.cs">
+      <DependentUpon>urun-guncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-guncelle.aspx.designer.cs">
+      <DependentUpon>urun-guncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-sil.aspx.cs">
+      <DependentUpon>urun-sil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-sil.aspx.designer.cs">
+      <DependentUpon>urun-sil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eticaret.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eticaret.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-index.aspx.cs">
+      <DependentUpon>admin-index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-index.aspx.designer.cs">
+      <DependentUpon>admin-index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-kategori.aspx.cs">
+      <DependentUpon>admin-kategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-kategori.aspx.designer.cs">
+      <DependentUpon>admin-kategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-layout.Master.cs">
+      <DependentUpon>admin-layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-layout.Master.designer.cs">
+      <DependentUpon>admin-layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-marka.aspx.cs">
+      <DependentUpon>admin-marka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-marka.aspx.designer.cs">
+      <DependentUpon>admin-marka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-uye.aspx.cs">
+      <DependentUpon>admin-uye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-uye.aspx.designer.cs">
+      <DependentUpon>admin-uye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-urun.aspx.cs">
+      <DependentUpon>admin-urun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\admin-urun.aspx.designer.cs">
+      <DependentUpon>admin-urun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\kategori-ekle.aspx.cs">
+      <DependentUpon>kategori-ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\kategori-ekle.aspx.designer.cs">
+      <DependentUpon>kategori-ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\marka-ekle.aspx.cs">
+      <DependentUpon>marka-ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\marka-ekle.aspx.designer.cs">
+      <DependentUpon>marka-ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-ekle.aspx.cs">
+      <DependentUpon>urun-ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\admin\urun-ekle.aspx.designer.cs">
+      <DependentUpon>urun-ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\kullanıcı-giriş.aspx.cs">
+      <DependentUpon>kullanıcı-giriş.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\kullanıcı-giriş.aspx.designer.cs">
+      <DependentUpon>kullanıcı-giriş.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\kullanıcı-üyeol.aspx.cs">
+      <DependentUpon>kullanıcı-üyeol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\kullanıcı-üyeol.aspx.designer.cs">
+      <DependentUpon>kullanıcı-üyeol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yonetim\sepet.aspx.cs">
+      <DependentUpon>sepet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\sepet.aspx.designer.cs">
+      <DependentUpon>sepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\urun-detay.aspx.cs">
+      <DependentUpon>urun-detay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\urun-detay.aspx.designer.cs">
+      <DependentUpon>urun-detay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\urun.aspx.cs">
+      <DependentUpon>urun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\urun.aspx.designer.cs">
+      <DependentUpon>urun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetim\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yonetim\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Yonetim\Layout.Master" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.rtl.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.esm.js.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.js.map" />
+    <Content Include="boostrap\bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js.map" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="eticaret.xsc">
+      <DependentUpon>eticaret.xsd</DependentUpon>
+    </Content>
+    <None Include="eticaret.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eticaret.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="eticaret.xss">
+      <DependentUpon>eticaret.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Yonetim\admin\admin-layout.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resima\" />
+    <Folder Include="Yonetim\images\" />
+    <Folder Include="Yonetim\marka-image\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56655</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44311/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <style>
+
+
+        .sepet-card {
+            width: 100%;
+            height: auto;
+            display: flex;
+            border-style: solid;
+            border-width: 0.1px;
+            margin-bottom: 0.5rem;
+            background-color: black;
+        }
+
+
+
+
+        .left-sepet {
+            width: 16%;
+
+            padding-left: 1rem;
+            background-color: aqua;
+        }
+
+        .sepet-img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            object-fit: cover;
+        }
+
+            .sepet-img img {
+                width: 92%;
+                height: 98%;
+                background-size: cover;
+            }
+
+
+        .center-sepet {
+            width: 52%;
+            padding: 0.5rem 0;
+            background-color: cadetblue;
+        }
+
+        .ürün-bilgileri {
+            line-height: 2rem;
+            display: flex;
+            flex-direction: column;
+            vertical-align: auto;
+            padding-left: 1rem;
+        }
+
+            .ürün-bilgileri span {
+                font-weight: bolder;
+            }
+
+        .ürün-marka {
+            font-size: 1.7rem;
+        }
+
+        .ürün-renk {
+            font-size: 1.2rem;
+        }
+
+        .ürün-kargo-durun {
+            color: green;
+            font-size: 1.2rem;
+        }
+
+        .ürün-adet {
+            font-size: 1.4rem;
+        }
+
+        .right-sepet {
+            width: 32%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+            .right-sepet .ürün-fiyat {
+                font-size: 1.9rem;
+            }
+
+            .right-sepet .ürün-delete {
+                font-size: 2rem;
+            }
+    </style>
+
+
+
+
+
+    <div class="sepet-card">
+
+        <div class="left-sepet">
+            <div class="sepet-img">
+                <img src="images/Başlıksız-1.png" alt="Alternate Text" />
+            </div>
+        </div>
+
+        <div class="center-sepet">
+            <div class="ürün-bilgileri">
+                <p class="ürün-marka"><span>apple</span> Apple Iphone 14 Pro Max 256 gb Derin Mor </p>
+                <p class="ürün-renk">Renk: Derin Mor</p>
+                <p class="ürün-kargo-durun">Ücretsiz kargo</p>
+                <p class="ürün-adet">adet</p>
+            </div>
+        </div>
+
+        <div class="right-sepet">
+            <h3 class="ürün-fiyat">59.000</h3>
+            <p class="ürün-delete"><i class="fa-solid fa-trash-can"></i></p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

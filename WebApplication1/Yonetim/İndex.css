@@ -1,0 +1,247 @@
+﻿body {
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*img {
+    padding: 0;
+    max-height: 100%;
+    min-width: 100%;
+}*/
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+/*================================================Header===============*/
+.img-kapsayıcı {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.Header-image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+.header-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.header-btn {
+    background: rgb(100,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 1.5rem 3rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-width: 0.5rem;
+    border-color: black;
+    cursor: pointer;
+}
+/*================================================Header===============*/
+/*================================================sectiklerim section===============*/
+
+.populer-container {
+    background-color: aliceblue;
+    height: auto;
+    padding-bottom: 3rem;
+    
+}
+
+.populer-title {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/*================================================sectiklerim section===============*/
+/*================================================section markalar ===============*/
+
+
+.marka-container {
+ /*   background-color: gray;*/
+    height: 25rem;
+    margin: 1rem 0;
+}
+
+.marka-title h2 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+
+
+
+/*================================================ sectio markalarn===============*/
+
+/*================================================ sana ozel ===============*/
+.sana-ozel-container {
+    background-color: #ffa54f;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.sana-ozel-center {
+    width: 50%;
+    margin: auto;
+}
+
+.sana-ozel-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.sana-ozel-image {
+    background-color: red;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+}
+
+
+/*================================================ sana ozel ===============*/
+/*================================================ gezdiklerim ===============*/
+
+.populer-container {
+    /*background-color: grey;*/
+    height: 39rem;
+}
+
+.populer-title {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.populer-card {
+    width: 12.4%;
+    height: auto;
+    float: left;
+    margin-right: 2.5rem;
+}
+
+.populer-image {
+    border-radius: 1rem;
+    width: 100%;
+    height: 18rem;
+    background-size: cover;
+    transition: 0.9s;
+}
+
+.populer-ürünad {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.populer-indirim {
+    font-size: 1.1rem;
+    color: red;
+}
+
+.populer-Ürün-fiyatı {
+    font-size: 1.5rem;
+}
+
+.populer-card:hover img {
+    transform: scale(1.1);
+}
+
+/*================================================ gezdiklerim ===============*/
+/*================================================Kampanya=====================*/
+
+
+.kampanya-container {
+    /* background-color: yellow;*/
+    display: flex;
+    z-index: 2;
+    padding: 2.5rem 0;
+}
+
+
+.kampanya-card {
+    margin: 0 2rem;
+    background: rgb(0, 0, 0);
+    width: 23%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+    .kampanya-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.9s;
+    }
+
+.kampanya-btn {
+    /* background-color: darkorchid;*/
+    width: 100%;
+    padding: 1.5rem 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    opacity: 0;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.kampanya-card:hover .kampanya-btn { /*hover ozeligi, kartın uzerine gelince  btn calısacak */
+    opacity: 1;
+}
+
+.kampanya-card:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+/*================================================Kampanya=====================*/
+
+
+

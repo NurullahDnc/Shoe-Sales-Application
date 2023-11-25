@@ -1,0 +1,93 @@
+﻿html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 50%;
+    background-color: gray;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-title {
+    text-align: center;
+    padding: 2rem 0; /**/
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem; /**/
+}
+
+.input-group {
+    width: 30rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    border: none;
+    text-indent: 1rem;
+}
+
+    .input-group:focus {
+        outline: 3px solid black;
+    }
+
+
+
+
+.form-cinsiyet-control {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 0 2rem;
+}
+
+
+.form-radio {
+    float: left;
+    padding: 0 1rem;
+}
+
+
+
+
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-hatırla-control {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.form-label {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .form-label:hover {
+        text-decoration: underline;
+        transition: 0.7s;
+    }

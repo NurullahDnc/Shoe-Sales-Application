@@ -1,0 +1,136 @@
+﻿
+.üst-bosluk {
+    height: 7rem;
+}
+
+.baslık-sepet h5 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.sepet-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+
+.baslık-sepet {
+    padding: 2rem 0;
+}
+
+
+
+/**/
+
+
+
+.sepet-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+/*    background-color: gray;
+*/}
+
+
+
+.sepet-card-container {
+    width: 79%;
+    height: auto;
+ /*   display: flex;
+    float: left;*/
+    
+    background-color: red;
+}
+
+/*siparis*/
+
+.siparis-ozet-container {
+    width: 20%;
+    height: 50%;
+    float: right;
+    border-style: solid;
+    border-width: 0.1px;
+}
+
+
+.siparis-ozet {
+    height: auto;
+    width: 100%;
+}
+ 
+
+.siparis-ozet-title {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.sepet-hr {
+    width: 90%;
+    margin: auto;
+}
+
+
+.siparis-container {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .siparis-container td {
+        padding: 0.1rem 2rem;
+    }
+
+
+.kupon {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+    .kupon .kupon-text {
+        width: 45%;
+        border-width: 0.1rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+        .kupon .kupon-text:focus {
+            outline: none;
+        }
+
+    .kupon .kupon-buton {
+        padding: 0.4rem 1rem;
+        line-height: 1.4rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        display: flex;
+        border-width: 0.2rem;
+    }
+
+
+
+.odeme-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+    .odeme-btn .btn {
+        width: 90%;
+        padding: 0.7rem 0;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        background-color: green;
+        color: white;
+    }
+/**/
+.alt-sepet {
+    padding: 2rem 0;
+}

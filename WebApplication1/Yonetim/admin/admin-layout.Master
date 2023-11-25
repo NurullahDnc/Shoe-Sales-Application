@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin-layout.master.cs" Inherits="WebApplication1.Yonetim.admin.admin_layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--kutuphane-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--font avsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .container {
+            height: auto;
+        }
+
+        .left-menu {
+            font-size: 1.2rem;
+        }
+
+            .left-menu h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+        .header-content {
+            width: 100%;
+        }
+
+        .right-nav {
+            float: right;
+        }
+
+        .left-nav {
+            float: left;
+        }
+
+        .colors {
+            background-color: #5f5f5f;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="w3-sidebar w3-grey w3-bar-block w3-teal left-menu" style="width: 15%">
+                <h3 class="w3-bar-item">E-Ticaret</h3>
+                <a href="admin-index.aspx" class="w3-bar-item w3-button">Anasayfa</a>
+                <a href="admin-urun.aspx" class="w3-bar-item w3-button">Ürün</a>
+                <a href="admin-kategori.aspx" class="w3-bar-item w3-button">Kategori</a>
+                <a href="admin-marka.aspx" class="w3-bar-item w3-button">Marka</a>
+                <a href="admin-uye.aspx" class="w3-bar-item w3-button">Üye</a>
+                <a href="admin-Siparis.aspx" class="w3-bar-item w3-button">Sipariş</a>
+            </div>
+
+            <!-- Page Content -->
+            <div style="margin-left: 15%">
+                <div class="w3-container colors header-content">
+                    <div class="left-nav">
+                        <h1>Admin Panel</h1>
+                    </div>
+                    <div class="right-nav">
+                        <h1>Profil</h1>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="w3-container ">
+                </div>
+
+            </div>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+

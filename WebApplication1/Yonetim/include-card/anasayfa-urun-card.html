@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        .urun-card {
+            padding-top: 0.5rem;
+            width: 18rem;
+            height: auto;
+            float: left;
+            /*   background-color: cornflowerblue;*/
+            color: white;
+            margin-right: 1.7rem;
+            border-style: solid;
+            border-width: 0.1rem;
+            border-color: black;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+
+            .urun-card:hover img {
+                transform: scale(1.1);
+            }
+
+        .urun-image {
+            border-radius: 20px;
+            width: 100%;
+            height: 19rem;
+            background-size: cover;
+            /* background-color: gold;*/
+            transition: 0.9s;
+        }
+
+        .urun-text {
+            padding: 0 1rem;
+        }
+
+        .urun-ad {
+            width: 100%;
+            height: 2.8rem;
+            /* background-color: blueviolet;*/
+            overflow: hidden;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            text-align: left;
+            text-indent: 1rem;
+            color: black;
+        }
+
+        .urun-indirim {
+            font-size: 1rem;
+            color: red;
+            width: 100%;
+            padding: 0.5rem 0;
+            text-align: center;
+            /*background-color: black;*/
+        }
+
+        .urun-fiyat {
+            font-size: 1.5rem;
+            padding: 0.5rem 0;
+            /* background-color: lightgreen;*/
+            color: orangered;
+        }
+    </style>
+
+</head>
+<body>
+    <!--populer urunler-->
+
+    <div class="urun-card">
+        <!--secilen urune gore urun detaya gidiyor-->
+        <a href="urun-detay.aspx?UrunId=<%# Eval(" populerId")%>
+            ">
+
+            <img src="images/Başlıksız-1.png" class="urun-image" />
+            <div class="urun-text">
+                <p class="urun-ad"><%# Eval("UrunAdi")%></p>
+                <h5 class="urun-indirim">Son 14 Günün En Düşük Fiyatı!</h5>
+                <h3 class="urun-fiyat"><%# Eval("UrunFiyati")%></h3>
+            </div>
+
+        </a>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+

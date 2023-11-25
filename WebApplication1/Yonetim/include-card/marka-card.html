@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .marka-card {
+            width: 10rem;
+            height: 14rem;
+/*            background-color: red;
+*/            border-radius: 0.7rem;
+            margin-right: 2.4rem;
+            border-style: solid;
+            border-width: 0.1px;
+            float: left;
+        }
+
+
+        .marka-image {
+            width: 100%;
+            height: 9rem;
+            background-size: cover;
+/*            background-color: yellow;
+*/           
+        }
+
+        .marka-ad {
+            width: auto;
+            height: 4.6rem;
+            font-size: 1.7rem;
+            padding: 0.6rem 0;
+            color: black;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  /*          background-color: aqua;*/
+/**/        }
+    </style>
+
+</head>
+<body>
+
+    <div class="marka-card">
+        <a href="#">
+            <!--<img src="images/koton-logo.png" class="marka-image" />-->
+
+            <asp:Image class="marka-image" ID="Image1" runat="server" ImageUrl='<%# Eval("MarkaResim", "~/Yonetim/marka-image{0}") %>' />
+
+
+            <p class="marka-ad"><%# Eval("MarkaAdi")%></p>
+
+
+        </a>
+    </div>
+</body>
+</html>

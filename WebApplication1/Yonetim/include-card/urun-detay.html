@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        .container {
+            width: 90%;
+            height: 50rem;
+            margin: auto;
+            display: flex;
+        }
+
+        .ust-bosluk {
+            height: 8rem;
+        }
+
+        .right-ürün-detay {
+            width: 45%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container {
+            width: 60%;
+            height: auto;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+
+        .right-ürün-detay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+
+
+
+
+        /*   ürün detay left  --- --------------------------              */
+
+        .left-ürün-detay {
+            float: right;
+            width: 55%;
+        }
+
+        .ürün-container {
+            padding: 1rem 1rem;
+            flex-direction: column;
+        }
+
+        .ürün-marka {
+            margin: 1rem 0;
+            font-size: 2.2rem;
+        }
+
+        .ürün-acıklama {
+            font-size: 1.8rem;
+            letter-spacing: 0.5px;
+            word-spacing: 0.1rem;
+            padding: 1rem 0;
+            text-indent: 1rem;
+        }
+
+        .ürün-fiyat {
+            font-size: 2.5rem;
+            color: blue;
+            padding: 1rem 0;
+        }
+
+        .ürün-kargo-indirim {
+            padding-top: 1.2rem;
+        }
+
+        .ürün-renk {
+            font-size: 1.3rem;
+            padding: 0.8rem 0;
+        }
+
+        .btn {
+            padding: 0.3rem 0.4rem;
+            border-width: 1px;
+            margin-right: 1.5rem;
+            border-radius: 3px;
+        }
+
+        .btn-beden {
+            padding: 0.4rem 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-sepete-ekle {
+            width: 50%;
+            padding: 1.5rem 0;
+            border-radius: 1rem;
+            background-color: orange;
+            color: white;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .hr {
+            margin: 3rem 0;
+        }
+        /*  ürün alt      ------------------------------              -*/
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+
+            <div class="detay-container">
+            </div>
+            <div class="right-ürün-detay">
+                <div class="img-container">
+                    <img src="images/Başlıksız-1.png" />
+                </div>
+            </div>
+
+            <div class="left-ürün-detay">
+                <div class="ürün-container">
+                    <h1 class="ürün-marka">Apple</h1>
+                    <p class="ürün-acıklama">lorem Buğraterzimoda Brooklyn Baskılı Unisex Kahverengi-haki-bej (bol Kalıp) Oversize 3'lü T-shirt Paketi bmbkbt756754</p>
+                    <h3 class="ürün-fiyat">59.000</h3>
+                    <p class="ürün-kargo-indirim">100 tl üzeri kargo bedava</p>
+                    <hr />
+
+                    <div>
+                        <h3 class="ürün-renk">Renk:</h3>
+
+                        <asp:Button ID="Button1" CssClass="btn-renk  btn" runat="server" Text="Kırmızı" />
+                        <asp:Button ID="Button4" CssClass="btn-renk  btn" runat="server" Text="Derin Mor" />
+                    </div>
+
+                    <div>
+                        <h3 class="ürün-renk">Beden:</h3>
+
+                        <asp:Button ID="Button2" CssClass="btn-beden  btn" runat="server" Text="S" />
+                        <asp:Button ID="Button5" CssClass="btn-beden  btn" runat="server" Text="M" />
+                    </div>
+
+                    <hr />
+                    <asp:Button ID="Button3" CssClass="btn-sepete-ekle" runat="server" Text="Sepete Ekle" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ürün-text">
+            <h1>Ürün Bilgileri</h1>
+            <p>Contemporary İstanbul Yönetim Kurulu Başkanı Ali Güreli, bu yıl 17’ncisi düzenlenen çağdaş sanat fuarında Jeff Koons’a eşlik etmenin yanı sıra dünyaca tanınan sanatçı ile ziyaretçilerin de katılım sağladığı keyifli bir söyleşiye imza attı. Çağdaş sanatın hem dünyada hem de ülkemizdeki mevcut durumunun değerlendirildiği söyleşide; sanat endüstrisinin Batı'dan Doğu'ya yönelişi, dijital sanat, Koons'un sanatının yeni teknolojilerden nasıl etkilediği ve İstanbul’dan nasıl ilham aldığı üzerine konuşuldu. Contemporary İstanbul Yönetim Kurulu Başkanı Ali Güreli, bu yıl 17’ncisi düzenlenen çağdaş sanat fuarında Jeff Koons’a eşlik etmenin yanı sıra dünyaca tanınan sanatçı ile ziyaretçilerin de katılım sağladığı keyifli bir söyleşiye imza attı. </p>
+        </div>
+
+    </header>
+
+</body>
+</html>

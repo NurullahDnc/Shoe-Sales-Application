@@ -1,0 +1,83 @@
+﻿
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 50%;
+    background-color: gray;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-title h1 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.input-group {
+    width: 30rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    border: none;
+    text-indent: 1rem;
+}
+
+    .input-group:focus {
+        outline: 3px solid black;
+    }
+
+
+.checkbox-control {
+    float: right;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+/*
+.form-checbox {
+    padding-top: 2rem;
+   
+}*/
+
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 0;
+    font-size: 2rem;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-label {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .form-label:hover {
+        text-decoration: underline;
+        transition: 0.7s;
+    }

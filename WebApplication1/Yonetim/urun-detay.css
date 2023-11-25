@@ -1,0 +1,44 @@
+﻿
+/*    ürün  yorum -------------------------------*/
+
+
+.container-alt {
+    width: 90%;
+    padding: 1rem 2rem;
+    height: auto;
+    margin: auto;
+}
+
+
+.ürün-yorum {
+    margin-top: 4rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+    .ürün-yorum h1 {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+
+.yorum-icerik {
+    padding: 1.5rem 3rem;
+    line-height: 2rem;
+}
+
+    .yorum-icerik h4 {
+        font-size: 1.2rem;
+        color: gray;
+    }
+
+    .yorum-icerik span {
+        font-size: 0.9rem;
+    }
+
+    .yorum-icerik p {
+        font-size: 1.3rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }

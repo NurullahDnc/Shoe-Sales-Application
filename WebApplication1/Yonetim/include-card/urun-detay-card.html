@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        .container {
+            width: 90%;
+            height: 60rem;
+            margin: auto;
+            display: flex;
+        }
+
+        .ust-bosluk {
+            height: 8rem;
+        }
+        /**/
+
+        .right-ürün-detay {
+            width: 45%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container {
+            width: 40rem;
+            height: 55rem;
+            border-style: solid;
+            border-width: 1px;
+
+        }
+
+
+        .right-ürün-detay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+
+
+
+
+
+        /*   ürün detay left  --- --------------------------              */
+
+        .left-ürün-detay {
+            float: right;
+            width: 55%;
+        }
+
+        .ürün-container {
+            padding: 1rem 1rem;
+            flex-direction: column;
+        }
+
+        .ürün-marka {
+            margin: 1rem 0;
+            font-size: 2.2rem;
+        }
+
+        .ürün-adi {
+            font-size: 1.8rem;
+            letter-spacing: 0.5px;
+            word-spacing: 0.1rem;
+            padding: 1rem 0;
+            text-indent: 1rem;
+        }
+
+        .ürün-fiyat {
+            font-size: 2.5rem;
+            color: blue;
+            padding: 1rem 0;
+        }
+
+        .ürün-kargo-indirim {
+            padding-top: 1.2rem;
+        }
+
+        .ürün-renk {
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            padding: 0.8rem 0;
+        }
+
+            .ürün-renk h6 {
+                font-size: 1.5rem;
+                padding: 0.8rem 0;
+            }
+
+            .ürün-renk p {
+                font-size: 1.4rem;
+                text-indent: 1rem;
+            }
+
+
+        .btn-sepete-ekle {
+            width: 50%;
+            padding: 1.5rem 0;
+            border-radius: 1rem;
+            background-color: orange;
+            color: white;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .hr {
+            margin: 3rem 0;
+        }
+
+
+
+        /*  ürün alt      ------------------------------              -*/
+
+        /*ürün acıklama*/
+        .ürün-text {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10px;
+            padding-bottom: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            text-indent: 2rem;
+            width: 88%;
+            margin: auto;
+        }
+
+            .ürün-text h1 {
+                padding: 2rem 0;
+            }
+
+            .ürün-text p {
+                padding: 0 1rem;
+            }
+
+        /*ürün acıklama*/
+
+
+
+    </style>
+</head>
+<body>
+    <div class="">
+        <div class="container">
+            <div class="right-ürün-detay">
+                <div class="img-container">
+                    <asp:Image class="urun-image" ID="Image1" runat="server" ImageUrl='<%# Eval("Resim1", "~\\Yonetim\\images\\{0}") %>' />
+                </div>
+            </div>
+
+            <div class="left-ürün-detay">
+                <div class="ürün-container">
+                    <h1 class="ürün-marka"><%# Eval("MarkaAdi")%></h1>
+                    <p class="ürün-adi"><%# Eval("UrunAdi")%></p>
+                    <h3 class="ürün-fiyat"><%# Eval("UrunFiyati")%></h3>
+                    <p class="ürün-kargo-indirim">100 tl üzeri kargo bedava</p>
+                    <hr />
+
+                    <div class="ürün-renk">
+                        <h6>Renk:</h6>
+
+                        <p><%# Eval("RenkAdi")%></p>
+                    </div>
+
+                    <div class="ürün-renk">
+                        <h6>Beden:</h6>
+
+                        <p><%# Eval("BedenNo")%></p>
+                    </div>
+
+                    <hr />
+                    <asp:Button ID="Button3" CssClass="btn-sepete-ekle" runat="server" Text="Sepete Ekle" />
+                </div>
+         
+
+            </div>
+
+        </div>
+
+
+        <div class="ürün-text">
+            <h1>Ürün Bilgileri</h1>
+            <p>Modern Türkçede şehir için en yaygın kullanılan ad İstanbul (Türkçe telaffuz: [isˈtanbuɫ] ve halk arasında bazen [ɯsˈtambuɫ]) olmaktadır. Bu adın "eis tin polin" (Yunanca: εις την πόλιν) tamlamasından geldiği sanılmaktadır.[22] Bu tamlama, o dönem Yunancasında "şehirde", "şehrin içinde", "şehiriçi" gibi anlamlara gelmekteydi.[22] Ayrıca halk dilinde "n" ünsüzüne bitişen "p" sesi "b" sesine dönüşüyordu.[22] Bu bağlamda İstanbul adının kökeni pek çok kaynakta bu tamlamayla ilişkilendirilmektedir.  </p>
+        </div>
+    </div>
+</body>
+</html>

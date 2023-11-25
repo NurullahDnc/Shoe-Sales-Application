@@ -1,0 +1,212 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.Master.cs" Inherits="WebApplication1.Anasayfa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--css baglama-->
+    <link href="Layout.css" rel="stylesheet" />
+
+
+
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.aspx"><i class="fa-brands fa-critical-role"></i></a></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <!--Yeni Ve Öne Çıkanlar-->
+
+                        <a class="nav-link" href="urun.aspx">
+
+                            <!--kategori1-->
+                            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="kategori1">
+                                <ItemTemplate>
+                                    <asp:Label ID="KategoriIdLabel" runat="server" Text='<%# Eval("KategoriAdi") %>' />
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource ID="kategori1" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select DISTINCT Kategori.KategoriAdi from  Kategori where Kategori.KategoriId=1"></asp:SqlDataSource>
+                            <!--kategori1-->
+
+                        </a>
+
+                        <!--Yeni Ve Öne Çıkanlar-->
+                    </li>
+
+
+                    <li>
+                        <!--Erkek-->
+
+                        <a class="nav-link" href="#">
+                            <!--kategori2-->
+
+                            <asp:Repeater ID="Repeater3" runat="server" DataSourceID="kategori2">
+                                <ItemTemplate>
+                                    <asp:Label ID="KategoriIdLabel" runat="server" Text='<%# Eval("KategoriAdi") %>' />
+                                    <ul>
+                                        <!--altkategori2-->
+                                        <asp:Repeater ID="Repeater4" runat="server" DataSourceID="altkategori2">
+                                            <ItemTemplate>
+                                                <a href="<%# Eval("AltKategoriId","urun.aspx?kategori={0}") %>"><%# Eval("AltKategoriAdi") %></a>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                        <asp:SqlDataSource ID="altkategori2" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select * from Kategori INNER JOIN AltKategori ON AltKategori.KategoriId=Kategori.KategoriId WHERE AltKategori.KategoriId=2"></asp:SqlDataSource>
+                                        <!--altkategori2-->
+                                    </ul>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource ID="kategori2" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select DISTINCT Kategori.KategoriAdi from  Kategori where Kategori.KategoriId=2"></asp:SqlDataSource>
+
+                            <!--kategori2-->
+                        </a>
+
+                        <!--Erkek-->
+                    </li>
+
+
+
+                    <li>
+                        <!--kadın-->
+                        <a class="nav-link" href="#">
+                            <!--kategori3-->
+                            <asp:Repeater ID="Repeater5" runat="server" DataSourceID="kategori3">
+                                <ItemTemplate>
+                                    <asp:Label ID="KategoriIdLabel" runat="server" Text='<%# Eval("KategoriAdi") %>' />
+
+                                    <ul>
+                                        <!--altkategori3-->
+                                        <asp:Repeater ID="Repeater6" runat="server" DataSourceID="altkategori3">
+                                            <ItemTemplate>
+                                                <a href="<%# Eval("AltKategoriId","urun.aspx?kategori={0}") %>"><%# Eval("AltKategoriAdi") %></a>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                        <asp:SqlDataSource ID="altkategori3" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select * from Kategori INNER JOIN AltKategori ON AltKategori.KategoriId=Kategori.KategoriId WHERE AltKategori.KategoriId=3"></asp:SqlDataSource>
+                                        <!--altkategori3-->
+                                    </ul>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource ID="kategori3" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select DISTINCT Kategori.KategoriAdi from  Kategori where Kategori.KategoriId=3"></asp:SqlDataSource>
+
+                            <!--kategori3-->
+                        </a>
+                        <!--kadın-->
+
+                    </li>
+                    <li>
+                        <!--Çocuk-->
+                        <a class="nav-link" href="#">
+                            <!--kategori4-->
+                            <asp:Repeater ID="Repeater7" runat="server" DataSourceID="kategori4">
+                                <ItemTemplate>
+                                    <asp:Label ID="KategoriIdLabel" runat="server" Text='<%# Eval("KategoriAdi") %>' />
+                                    <ul>
+                                        <!--altkategori4-->
+
+                                        <asp:Repeater ID="Repeater8" runat="server" DataSourceID="altkategori4">
+                                            <ItemTemplate>
+                                                <a href="<%# Eval("AltKategoriId","urun.aspx?kategori={0}") %>"><%# Eval("AltKategoriAdi") %></a>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                        <asp:SqlDataSource ID="altkategori4" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select * from Kategori INNER JOIN AltKategori ON AltKategori.KategoriId=Kategori.KategoriId WHERE AltKategori.KategoriId=4"></asp:SqlDataSource>
+                                        <!--altkategori4-->
+
+                                    </ul>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource ID="kategori4" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select DISTINCT Kategori.KategoriAdi from  Kategori where Kategori.KategoriId=4"></asp:SqlDataSource>
+                            <!--kategori4-->
+
+                        </a>
+                        <!--Çocuk-->
+
+                    </li>
+                    <li>
+                        <!--kategori5-->
+                        <a class="nav-link" href="#">
+                            <!--Outdoor5-->
+                            <asp:Repeater ID="Repeater9" runat="server" DataSourceID="kategori5">
+                                <ItemTemplate>
+                                    <asp:Label ID="KategoriIdLabel" runat="server" Text='<%# Eval("KategoriAdi") %>' />
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <asp:SqlDataSource ID="kategori5" runat="server" ConnectionString="<%$ ConnectionStrings:E-Ticaret-IConnectionString %>" SelectCommand="select DISTINCT Kategori.KategoriAdi from  Kategori where Kategori.KategoriId=5"></asp:SqlDataSource>
+                            <!--Outdoor5-->
+
+                        </a>
+                        <!--kategori5-->
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="right-nav">
+                <input type="text" class="search" placeholder="Aradıgınız ürün" />
+                <a class="aramaicon" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+
+                </a>
+                <ul class="kullanıcı">
+                    <li><a class="shopping" href="sepet.aspx"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li><a class="user" href="#"><i class="fa-solid fa-user"></i></a>
+                        <ul>
+                            <li>
+                                <a href="kullanıcı-giriş.aspx">
+                                    <p>Giriş Yap</p>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="kullanıcı-üyeol.aspx">
+                                    <p>Üye ol</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+        </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <h1>footer</h1>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+</html>
+
+
+
